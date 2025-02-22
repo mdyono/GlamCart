@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
+import { FaCartShopping } from "react-icons/fa6";
 import logo1 from '../assets/logo1.png'
 const Navbar = () => {
+  let [menu,setmenu]=useState("shop")
   return (
     <div className='navbar'>
       <div className='navlogo'>
-    <img src={logo1} alt="" />
+      <img src={logo1} alt="" />
     <p>GlamCart</p>
       </div>
-    </div>
+     
+        <ul className='navmenu'>
+            <li onClick={()=>{setmenu("shop")}}>Shop{menu==="shop"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Men")}}>Men{menu==="Men"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Women")}}>Women{menu==="Women"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Kids")}}>Kids{menu==="Kids"?<hr />:<></>}</li>
+
+        </ul>
+        <div className='nav-login'>
+            <button>Login</button>
+            <FaCartShopping size={40}/>
+            <div className='nav-cart-count'>0</div>
+        </div>
+      </div>
+    
   )
 }
 
