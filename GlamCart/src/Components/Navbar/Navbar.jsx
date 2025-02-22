@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { FaCartShopping } from "react-icons/fa6";
-import logo1 from '../assets/logo1.png'
+import logo2 from '../assets/logo2.jpg'
 const Navbar = () => {
   let [menu,setmenu]=useState("shop")
   return (
     <div className='navbar'>
       <div className='navlogo'>
-      <img src={logo1} alt="" />
+      <img src={logo2} alt="" />
     <p>GlamCart</p>
       </div>
      

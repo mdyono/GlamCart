@@ -6,6 +6,7 @@
     height: 95px;
     width: 95px;
     background-color: white;
+    border-radius: 20px;
 }
 /* .nav-login img{
     height: 35px;
@@ -70,6 +71,7 @@
     font-size: 20px;
     font-weight: 500;
     background: white;
+    cursor: pointer;
 }
 .nav-login button:active{
     background:#f3f3f3 ;
