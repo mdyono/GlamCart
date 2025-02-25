@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+}
+
 body{
     font-family: 'poppins';
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
