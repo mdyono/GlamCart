@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { FaCartShopping } from "react-icons/fa6";
 import logo2 from '../assets/logo2.jpg'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
-  let [menu,setmenu]=useState("shop")
+  let [menu,setmenu]=useState('shop')
   return (
     <div className='navbar'>
       <div className='navlogo'>
@@ -12,15 +13,15 @@ const Navbar = () => {
       </div>
      
         <ul className='navmenu'>
-            <li onClick={()=>{setmenu("shop")}}>Shop{menu==="shop"?<hr />:<></>}</li>
-            <li onClick={()=>{setmenu("Men")}}>Men{menu==="Men"?<hr />:<></>}</li>
-            <li onClick={()=>{setmenu("Women")}}>Women{menu==="Women"?<hr />:<></>}</li>
-            <li onClick={()=>{setmenu("Kids")}}>Kids{menu==="Kids"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Men")}}><Link style={{textDecoration:'none'}} to='/mens'>Men</Link>{menu==="Men"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Women")}}><Link style={{textDecoration:'none'}} to='/womens'>Women</Link>{menu==="Women"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("Kids")}}><Link style={{textDecoration:'none'}} to='/kids'>Kids</Link>{menu==="Kids"?<hr />:<></>}</li>
 
         </ul>
         <div className='nav-login'>
-            <button>Login</button>
-            <FaCartShopping size={40}/>
+            <Link to='/login'><button>Login</button></Link>
+            <Link to='/cart'><FaCartShopping size={40}/></Link>
             <div className='nav-cart-count'>0</div>
         </div>
       </div>
