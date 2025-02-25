@@ -6,7 +6,7 @@
     height: 95px;
     width: 95px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 300px;
 }
 /* .nav-login img{
     height: 35px;
@@ -24,12 +24,21 @@
     align-items: center;
     gap: 10px;
 }
-.navlogo p{
+/* .navlogo p{
+   
+    font-style:italic;
+} */
+
+.navlogo p {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     color: #171717;
     font-size: 38px;
     font-weight: 600;
-    /* font-style:italic; */
-}
+
+  }
 .navmenu{
     display: flex;
     justify-content: center;
