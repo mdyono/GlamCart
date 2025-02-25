@@ -6,9 +6,11 @@ import Offers from '../Components/offers/Offers'
 const Shop = () => {
   return (
     <div>
+
       <Hero/>
       <Popular/>
       <Offers/>
+
     </div>
   )
 }
