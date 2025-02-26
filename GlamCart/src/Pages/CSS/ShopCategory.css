@@ -19,8 +19,15 @@
     font-weight: 20px 170px;
 }
 .shopcategory-products{
-    margin: 20px 170px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    margin:  60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+   gap: 10px;
+}
+
+
+
+.shopcategory-products img{
+    height: 350px;
 }
