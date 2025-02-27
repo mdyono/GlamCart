@@ -33,11 +33,11 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
         <div className="productdisplay-right-description">
-            a light weight
+        Explore stylish and comfortable fashion for men, women, and kids. From everyday wear to trendy outfits, find the perfect fit for every occasion!
         </div>
         <div className="productdisplay-right-size">
             <h1> Select Size</h1>
-            <div className="productdisplay-right-size">
+            <div className="productdisplay-right-sizes">
                 <div>S</div>
                 <div>M</div>
                 <div>L</div>
@@ -45,7 +45,7 @@ const ProductDisplay = (props) => {
                 <div>XXL</div>
             </div>
         </div>
-        <button>ADD TO CART</button>
+        <button className='cartbtn'>ADD TO CART</button>
         <p className='productdisplay-right-category'><span>Category :</span> Women, T-shirt,Crop Top</p>
         <p className='productdisplay-right-category'><span>Tags :</span> Modern latest</p>
 
